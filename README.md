@@ -2,7 +2,7 @@
 
 ## 介绍
 用rust写的todo web应用（webassembly）  
-后端：rust + socket  
+后端：rust + socket + postgresql + diesel
 前端：rust + wasm-bindgen +seed
 ### Compiles for development
 ```
