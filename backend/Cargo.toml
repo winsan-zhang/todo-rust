@@ -1,0 +1,19 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["winsan"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+diesel = { version = "1.0.0", features = ["postgres"] }
+rocket = "0.4.2"
+rocket_cors = { verseion= "0.5.0", default-features = false }
+serde = { verseion = "1.0", features = ["derive"] }
+dotenv = "0.9.0"
+mytodo = { path = ".." }
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["json"]
